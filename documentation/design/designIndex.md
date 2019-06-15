@@ -8,7 +8,7 @@ One of these will include the `<MarkedDown>` tag which will encapsulate markdown
 
 ## TODO
 - ReactJS for `<Slides>`
-- RactsJS for `<Nav-Header>`
+- RactsJS for `<NavHeader>`
 - Marked Down hooked up correctly
 - CSS modules for the project
 

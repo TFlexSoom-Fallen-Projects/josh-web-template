@@ -1,0 +1,13 @@
+{
+    "img": "images/logo.png",
+    "nav": [
+        {
+            "name": "About Us",
+            "link": "https://somewebsitedotcom"
+        },
+        {
+            "name": "My Repo",
+            "link": "https://www.github.com/tflexsoom"
+        }
+    ]
+}

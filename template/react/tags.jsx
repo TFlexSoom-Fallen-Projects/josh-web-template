@@ -9,8 +9,17 @@
 /* Declare which modules to use here */
 function tags_doRender(){
     var root = document.getElementById("main-container");
-    ReactDOM.render(
-        <MarkedDown path="index.md"/>,
-        root
-    );
+    function next(content){
+        ReactDOM.render(
+            <div>
+                <NavHeader  imgLink={content.img} nav={content.nav}/>
+                <MarkedDown path="index.md"/>
+            </div>,
+            root
+        );
+
+        loadContent_main();
+    }
+
+    loadContentJson("NavHeader.json", next);
 }
