@@ -1,0 +1,15 @@
+# Tristan Hilbert
+# 6/14/2019
+#
+#
+# Web development ignore file
+# No binaries to ignore off the top of my head
+#
+
+# VSCode is my default editor
+**/.vscode/**
+
+
+#Node Stuff
+**/package-lock.json
+**/node_modules/**

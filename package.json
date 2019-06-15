@@ -1,0 +1,23 @@
+{
+  "name": "josh-web-template",
+  "version": "0.1.0",
+  "description": "A simple template for marketing static site built in react and has ability to introduce markdown text files.",
+  "main": "grunt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ReactJS",
+    "markdown"
+  ],
+  "author": "Tristan Hilbert",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "babel-preset-react-app": "^9.0.0",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "rimraf": "^2.6.3"
+  }
+}
