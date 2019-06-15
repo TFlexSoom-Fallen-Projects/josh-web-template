@@ -11,8 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin defer></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin defer></script>
+    
+    <!-- React Imports -->
+    <script src="src/tags.js" defer></script>
+    <script src="src/tags/markdown.js" defer></script>
 
     <!-- Template JS Modules -->
-    <script src="src/index.js" defer></script>
+    <script src="src/loadContent" defer></script>
+
+    <!-- Main Module -->
+    <!-- I did look at browserify and webpack, but nothing is grunt compliant pre ES6 -->
+    <script src="src/main.js" defer onload="main()"></script>
 </head>
-<body></body>
+<body>
+    <!-- React requires one to never append to the body container -->
+    <div id="main-container">
+
+    </div>
+</body>

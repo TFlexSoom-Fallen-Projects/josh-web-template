@@ -6,8 +6,9 @@
  * This will serve to import all the modules for the reactjs
  */
 
-/* Import Modules Here */
-
 /* Declare which modules to use here */
-ReactDOM.render();
-//# sourceMappingURL=tags.jsx.map
+function tags_doRender() {
+  ReactDOM.render(React.createElement("markedDown", {
+    path: "index"
+  }));
+}

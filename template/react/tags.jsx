@@ -6,9 +6,9 @@
  * This will serve to import all the modules for the reactjs
  */
 
-/* Import Modules Here */
-
-
-
 /* Declare which modules to use here */
-ReactDOM.render();
+function tags_doRender(){
+    ReactDOM.render(
+        <markedDown path="index"/>
+    );
+}

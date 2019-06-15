@@ -19,5 +19,6 @@
     "grunt": "^1.0.4",
     "grunt-babel": "^8.0.0",
     "rimraf": "^2.6.3"
-  }
+  },
+  "devDependencies": {}
 }

@@ -13,6 +13,13 @@ function applyMarkdown(path, elem){
 
 function compileMarkdown(req, elem){
     var text = req.response;
-    console.log(text);
     elem.innerText = text;
+}
+
+/* Main Definition */
+function load_ContentMain(){
+    var elements = querySelectorAll("div.marked-container");
+    elements.forEach((element) => {
+        applyMarkdown(element.getAttribute("path"), element);
+    });
 }

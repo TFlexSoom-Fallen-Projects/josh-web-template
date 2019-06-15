@@ -9,6 +9,8 @@
 # VSCode is my default editor
 **/.vscode/**
 
+# We don't want the build files to be in there
+**/newTemplate/**
 
 #Node Stuff
 **/package-lock.json

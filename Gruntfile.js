@@ -16,14 +16,16 @@ module.exports = function (grunt) {
     grunt.initConfig({
         babel: {
             options: {
-                sourceMap: true,
+                sourceMap: false,
                 presets: ["babel-preset-react-app/prod"]
             },
-            files: {
+            default: {
                 expand: true,
                 cwd: "template/react",
                 src: ["**/*.jsx"],
                 dest: newTemplate + "src/",
+                ext: ".js",
+                extDot: "first"
             }
         }
     });
