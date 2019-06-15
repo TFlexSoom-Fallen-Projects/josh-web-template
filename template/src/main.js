@@ -19,7 +19,7 @@ function main(){
     loadContent_main();
 
     /* rinse and repeat */
-    console.log("repeat?");
+    //console.log("repeat?");
 
     }while(cond);
 }

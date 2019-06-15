@@ -2,23 +2,18 @@
 
 function applyMarkdown(path, elem){
     var req = new XMLHttpRequest();
-    req.open("GET", path, true);
+    req.open("GET", "content/" + path, true);
     req.onreadystatechange = () => {
         if(req.readyState === 4 && (req.status === 200 || req.status === 0)){
-            compileMarkdown(req, elem);
+            elem.innerHTML = marked(req.responseText);
         }
     }
     req.send();
 }
 
-function compileMarkdown(req, elem){
-    var text = req.response;
-    elem.innerText = text;
-}
-
 /* Main Definition */
-function load_ContentMain(){
-    var elements = querySelectorAll("div.marked-container");
+function loadContent_main(){
+    var elements = document.querySelectorAll("div.marked-container");
     elements.forEach((element) => {
         applyMarkdown(element.getAttribute("path"), element);
     });

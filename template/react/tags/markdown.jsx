@@ -8,7 +8,7 @@
  * 
  */
 
-function markedDown(props){
+function MarkedDown(props){
     if(props.path){
         return(<div className="marked-container" path={props.path}></div>);
     }else{

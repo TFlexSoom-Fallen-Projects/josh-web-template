@@ -8,7 +8,9 @@
 
 /* Declare which modules to use here */
 function tags_doRender(){
+    var root = document.getElementById("main-container");
     ReactDOM.render(
-        <markedDown path="index"/>
+        <MarkedDown path="index.md"/>,
+        root
     );
 }
