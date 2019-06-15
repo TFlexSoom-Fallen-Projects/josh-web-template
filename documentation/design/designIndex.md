@@ -5,10 +5,10 @@ One of these will include the `<MarkedDown>` tag which will encapsulate markdown
 
 ## Done
 - ReactJS for `<MarkedDown>`
+- RactsJS for `<NavHeader>`
 
 ## TODO
 - ReactJS for `<Slides>`
-- RactsJS for `<NavHeader>`
 - Marked Down hooked up correctly
 - CSS modules for the project
 
