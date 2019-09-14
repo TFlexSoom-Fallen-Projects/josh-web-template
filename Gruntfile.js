@@ -12,6 +12,8 @@ module.exports = function (grunt) {
     var fs = require("fs");
     var rimraf = require("rimraf");
     var newTemplate = process.env.newTemplate ? process.env.newTemplate : "newTemplate/";
+    if(newTemplate[newTemplate.length - 1] !== '/')
+        newTemplate += "/";
 
     grunt.initConfig({
         babel: {
@@ -44,7 +46,7 @@ module.exports = function (grunt) {
     /* Copy the files over */
     grunt.registerTask("cpData", "Copies the content, src, and index.html to template", () => {
         if(fs.existsSync(newTemplate)){
-            grunt.fail.fatal("The template exists\n\"/newTemplate\"\nPlease rename or delete!\nTry using `grunt clean`");
+            grunt.fail.fatal("The template exists\n\"./" + newTemplate + "\"\nPlease rename or delete!\nTry using `grunt clean` or `npx grunt clean`");
         }
         fs.mkdirSync(newTemplate);
         var t = "template/";
