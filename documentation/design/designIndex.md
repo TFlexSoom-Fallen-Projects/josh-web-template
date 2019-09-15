@@ -8,8 +8,9 @@ and JSON settings. These will remain editable even upon serving the site. The te
 - RactsJS for `<NavHeader>`
 - ReactJS for `<Slides>`
 - Marked Down hooked up correctly
-- SCSS modules for the project
+- CSS modules for the project
 
 ## TODO
 - ReactJS for `<Sidebar>`
 - Create Test Suite for Repo
+- Further Documentation On Use
