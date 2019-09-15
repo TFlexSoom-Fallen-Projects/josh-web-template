@@ -29,8 +29,8 @@ function NavHeader(props){
     }
 
     return (
-    <div>
-        <div>
+    <div className="nav-header-bar">
+        <div className="nav-logo-container">
             <a href="index.html">
                 <img src={props.imgLink} alt="Logo Image for Index Hop" />
             </a>

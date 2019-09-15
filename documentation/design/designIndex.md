@@ -1,17 +1,15 @@
 # Philosophy
-There will be a multitude of React tags which will be used in tags.jsx
-
-One of these will include the `<MarkedDown>` tag which will encapsulate markdown sections. There will also be other very usable tags. This will be a one stop shop for a quick documenation or website built from scratch.
+The template represents the generation starting point. Every developer can use and edit the template. Running grunt will solidify the jsx modules.
+They will provide the browseable site for simple usage. The content directory which is also in the template will provide all *Markdown* content
+and JSON settings. These will remain editable even upon serving the site. The template can be recreated and repurposed.
 
 ## Done
 - ReactJS for `<MarkedDown>`
 - RactsJS for `<NavHeader>`
-
-## TODO
 - ReactJS for `<Slides>`
 - Marked Down hooked up correctly
-- CSS modules for the project
+- SCSS modules for the project
 
-## Considerations
-- Maybe use Sass?
-- Other uses for Grunt
+## TODO
+- ReactJS for `<Sidebar>`
+- Create Test Suite for Repo

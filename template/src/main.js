@@ -10,16 +10,9 @@
 
 
 function main(){
-    var cond = false;
-    do{
     /* First create containers */
     tags_doRender();
 
     /* Then load/render content */
     loadContent_main();
-
-    /* rinse and repeat */
-    //console.log("repeat?");
-
-    }while(cond);
 }

@@ -25,3 +25,4 @@ I will propose tools for testing after the initial project is complete. I have n
 - Babel
 - rimraf
 - Grunt
+- Node-Sass with scss

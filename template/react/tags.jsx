@@ -11,8 +11,13 @@ function tags_doRender(){
     var root = document.getElementById("main-container");
     function next(content){
         ReactDOM.render(
-            <div>
+            <div id="react-anchor">
                 <NavHeader  imgLink={content.img} nav={content.nav}/>
+                <Slides>
+                    <MarkedDown path="Slide0.md" />
+                    <MarkedDown path="Slide1.md" />
+                    <MarkedDown path="Slide2.md" />
+                </Slides>
                 <MarkedDown path="index.md"/>
             </div>,
             root

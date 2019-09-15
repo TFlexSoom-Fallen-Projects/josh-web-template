@@ -28,6 +28,6 @@ function loadContent_main(){
     var elements = document.querySelectorAll("div.marked-container");
     elements.forEach((element) => {
         applyMarkdown(element.getAttribute("path"), element);
-        console.log(element);
+        //console.log(element);
     });
 }
