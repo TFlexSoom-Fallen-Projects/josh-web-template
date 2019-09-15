@@ -14,9 +14,23 @@
 
 
 function Slides(props){
+    var first = true;
     return (
     <div className="Slides-Outer-Container">
-        {props.children.map((elem) => <div className="Slides-Slide"> {elem} </div>)}
+        <div className="Slides-Button-Left"><p className="Slides-Button-Text">&lt;</p></div>
+        <div className="Slides-Inner-Container">
+            {props.children.map((elem) => {
+                if(first){ 
+                    first=false; 
+                    return (<div className="Slides-Slide main"> {elem} </div>);
+                }else{
+                    return (<div className="Slides-Slide hidden"> {elem} </div>)
+                }
+            })}
+        </div>
+        <div className="Slides-Button-Right"><p className="Slides-Button-Text">&gt;</p></div>
     </div>
     );
 }
+
+

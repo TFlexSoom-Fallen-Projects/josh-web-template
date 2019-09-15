@@ -12,5 +12,6 @@ and JSON settings. These will remain editable even upon serving the site. The te
 
 ## TODO
 - ReactJS for `<Sidebar>`
+- Use Bootstrap or JS to allow dropdown for `<NavHeader>`
 - Create Test Suite for Repo
 - Further Documentation On Use

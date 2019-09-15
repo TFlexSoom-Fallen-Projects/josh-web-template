@@ -51,7 +51,7 @@ module.exports = function (grunt) {
         fs.mkdirSync(newTemplate);
         var t = "template/";
         fs.copyFileSync(t + "index.html", newTemplate + "index.html");
-        var subs = ["content/", "src/", "images/"];
+        var subs = ["content/", "src/", "images/", "style/"];
         subs.forEach((directory) => {
             fs.mkdirSync(newTemplate + directory);
             fs.readdirSync(t + directory).forEach((file) => {
