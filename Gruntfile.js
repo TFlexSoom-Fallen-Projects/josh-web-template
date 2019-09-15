@@ -11,6 +11,8 @@
 module.exports = function (grunt) {
     var fs = require("fs");
     var rimraf = require("rimraf");
+    var sass = require("node-sass");
+
     var newTemplate = process.env.newTemplate ? process.env.newTemplate : "newTemplate/";
     if(newTemplate[newTemplate.length - 1] !== '/')
         newTemplate += "/";
@@ -29,10 +31,25 @@ module.exports = function (grunt) {
                 ext: ".js",
                 extDot: "first"
             }
+        },
+        sass: {
+            options: {
+                implementation: sass,
+                sourceMap: false
+            },
+            default: {
+                expand: true,
+                cwd: "template/style",
+                src: ["**/*.scss"],
+                dest: newTemplate + "style/",
+                ext: ".css",
+                extDot: "first"
+            }
         }
     });
 
     grunt.loadNpmTasks("grunt-babel");
+    grunt.loadNpmTasks("grunt-sass");
 
     /* Use rimraf to do cleaning */
     grunt.registerTask("clean", "Cleans all those templates with the es", () => {
@@ -60,7 +77,7 @@ module.exports = function (grunt) {
         });
     });
 
-    grunt.registerTask("default", ["cpData", "babel"]);
+    grunt.registerTask("default", ["cpData", "babel", "sass"]);
 
 
 };

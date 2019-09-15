@@ -13,3 +13,4 @@ and JSON settings. These will remain editable even upon serving the site. The te
 ## TODO
 - ReactJS for `<Sidebar>`
 - Create Test Suite for Repo
+- Further Documentation On Use
