@@ -11,6 +11,7 @@ and JSON settings. These will remain editable even upon serving the site. The te
 - CSS modules for the project
 
 ## TODO
+- Add Indicator for `<Slides>`
 - ReactJS for `<Sidebar>`
 - Use Bootstrap or JS to allow dropdown for `<NavHeader>`
 - Create Test Suite for Repo
