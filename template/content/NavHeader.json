@@ -2,12 +2,12 @@
     "img": "images/logo.png",
     "nav": [
         {
-            "name": "About Us",
-            "link": "https://somewebsitedotcom"
+            "name": "DnD",
+            "link": "https://TFlexSoom.github.io/repository/DnD.html"
         },
         {
-            "name": "My Repo",
-            "link": "https://www.github.com/tflexsoom"
+            "name": "Repo For Site",
+            "link": "https://github.com/TFlexSoom/josh-web-template"
         }
     ]
 }

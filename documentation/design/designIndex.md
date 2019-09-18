@@ -14,5 +14,9 @@ and JSON settings. These will remain editable even upon serving the site. The te
 - Add Indicator for `<Slides>`
 - ReactJS for `<Sidebar>`
 - Use Bootstrap or JS to allow dropdown for `<NavHeader>`
+- Rather than Using AJAX allow for Markdown Content Provision with `<link>` tags.
 - Create Test Suite for Repo
 - Further Documentation On Use
+- Further Simplify the pipeline with a personalized language or single compiled configuration file.
+- Warnings and Error Handling
+

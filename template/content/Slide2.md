@@ -1,6 +1,5 @@
 ### This is a smaller Heading ###
 ## Than this Heading ##
+I am some text
 
-
-
-`I am just a piece of code :(`
+`And I am just a piece of code :(`

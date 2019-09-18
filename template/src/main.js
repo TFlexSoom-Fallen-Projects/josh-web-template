@@ -5,14 +5,11 @@
  * 
  * Makes references to the following
  *  loadContent.js
- *  tags.js
+ *  tagsModuleRegistry.js
  */
 
 
 function main(){
     /* First create containers */
-    tags_doRender();
-
-    /* Then load/render content */
-    loadContent_main();
+    renderModules();
 }

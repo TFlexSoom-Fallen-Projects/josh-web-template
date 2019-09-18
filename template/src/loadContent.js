@@ -23,8 +23,18 @@ function loadContentJson(path, callback){
     req.send();
 }
 
+function loadContentMarkedOnElement(root){
+    var elements = root.querySelectorAll("div.marked-container");
+    elements.forEach((element) => {
+        applyMarkdown(element.getAttribute("path"), element);
+        console.log(element);
+    });
+}
+
 /* Main Definition */
-function loadContent_main(){
+/* Unused... LOL */
+/* I am using the above definition instead due to callback/promise issues */
+function loadContentMain(){
     var elements = document.querySelectorAll("div.marked-container");
     elements.forEach((element) => {
         applyMarkdown(element.getAttribute("path"), element);
