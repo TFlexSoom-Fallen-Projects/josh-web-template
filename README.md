@@ -13,6 +13,9 @@ This should proceed in 2 steps.
 3. `npx grunt` for the base build. This will create a new directory called newTemplate which stores the entire site. You can also deem a new name for the directory by setting the "newTemplate" environment variable. I believe this is `newTemplate="SOME_NAME_HERE"` in bash.
 4. `npx grunt` will not overwrite previously created templates. You must either, rename the directory or run `npx grunt clean` to remove the directory entirely, losing your work.
 
+# Remains Editable after creation
+Currently the scripts run each time the site is loaded. This means rather than precompiling (which would be better for users), you can make edits to your `content/` directory and they will still be served within your site.
+
 # How to add to the project
 I have a lot of ideas for the project, but even some features might elude me. Feel free to submit pull requests or otherwise. I have a few ideas within the `documentation/design/`
 directory. Feel free to implement any of those considerations. You may also create an issue for clarity on a specific feature.

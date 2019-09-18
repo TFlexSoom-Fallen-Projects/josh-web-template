@@ -45,12 +45,24 @@ module.exports = function (grunt) {
 
     /* Copy the files over */
     grunt.registerTask("cpData", "Copies the content, src, and index.html to template", () => {
+        //Make the Directory
         if(fs.existsSync(newTemplate)){
             grunt.fail.fatal("The template exists\n\"./" + newTemplate + "\"\nPlease rename or delete!\nTry using `grunt clean` or `npx grunt clean`");
         }
         fs.mkdirSync(newTemplate);
+
+        // Grab the root
         var t = "template/";
-        fs.copyFileSync(t + "index.html", newTemplate + "index.html");
+
+        // Copy html files
+        var rootFiles = fs.readdirSync(t);
+        rootFiles.forEach((file) => {
+            if(file.indexOf(".html") !== -1){
+                fs.copyFileSync(t + file, newTemplate + file);
+            }
+        });
+        
+        // Copy Other Directories
         var subs = ["content/", "src/", "images/", "style/"];
         subs.forEach((directory) => {
             fs.mkdirSync(newTemplate + directory);

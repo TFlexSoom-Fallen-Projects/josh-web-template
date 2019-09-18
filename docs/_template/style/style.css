@@ -1,0 +1,243 @@
+/*
+  * Tristan Hilbert
+  * 9/14/2019
+  * Stylesheet for Template
+  *
+  */
+
+/*
+  * I will start with the globals first and then
+  * work my way from there. In Honesty, I should
+  * replace this with a Bootstrap template or
+  * consider using Sass for better templating.
+  * Either way. I will try to keep this going
+  */
+
+body{
+  border: 0px;
+  margin: 0px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div, div *, p{
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #1d1d35;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+  color: #00008A;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 24px;
+  text-decoration: italic;
+}
+
+h3{
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h5{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h6{
+  font-size: 16px;
+  text-decoration: italic;
+}
+
+code{
+  color: #29298b;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  padding: 2px;
+  background-color: #fffcf2;
+  border: #e0ded4 1px solid;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  div, div *, a, p{
+    font-size: 14px;
+  }
+
+  code{
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  
+  h2{
+    font-size: 18px;
+    text-decoration: italic;
+  }
+  
+  h3{
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  h4{
+    font-size: 16px;
+    font-weight: 900;
+  }
+  
+  h5{
+    font-size: 16px;
+    text-decoration: italic;
+  }
+  
+  h6{
+    font-size: 16px;
+  }
+}
+
+#react-anchor{
+  width: 100%;
+  height: 100%;
+}
+
+#react-anchor > div{
+  width: 80%;
+}
+
+
+/* NavBar */
+.nav-header-bar, .navs{
+  flex-direction: row;
+}
+
+#react-anchor > .nav-header-bar{
+    background-color: #fffcf2;
+    background-image: linear-gradient(#e0ded4, #fffcf2, #e0ded4);
+    
+    width: 100%;
+    flex-basis: 100px;
+}
+
+.nav-logo-container{
+  flex-basis: 10%;
+  padding: 0px 50px;
+}
+
+.nav-logo-container img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.navs{
+  display: flex;
+  padding: 0px;
+  flex-basis: 90%;
+}
+
+.navs li{
+  padding: 4px;
+  margin: 10px 20px;
+  list-style: none;
+}
+
+.navs li a{
+  font-weight: 600;
+}
+
+.navs li a:hover{
+  color: #7f7fa1;
+  text-decoration: underline;
+}
+
+
+/* Markdown Components */
+
+div.marked-container{
+  align-items: left;
+}
+
+@media only screen and (max-width: 600px){
+  .nav-header-bar{
+    flex-basis: 50px;
+  }
+
+  .nav-logo-container{
+    flex-basis: 15%;
+  }
+
+  .navs{
+    flex-basis: 85%;
+  }
+
+  .navs li{
+    margin: 5px 8px;
+  }
+
+  
+}
+
+/* Slides */
+
+.Slides-Outer-Container{
+  margin: 10px 0px;
+  border: #c5c3b8 1px solid;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Slides-Inner-Container{
+  display: block;
+  flex-basis: 80%;
+  min-height: 300px;
+}
+
+.Slides-Outer-Container > *.main{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Slides-Inner-Container > *.hidden{
+  display: none;
+}
+
+.Slides-Slide{
+  display: block;
+}
+
+.Slides-Button-Text{
+  padding: 8px 16px;
+  background-color: #141413;
+  color: #b9b4ab;
+  border-radius: 2px;
+}
+
+.Slides-Button-Text:hover{
+  background-color: #000000;
+  color: #f8f3ea;
+  cursor: pointer;
+  border-radius: 6px;
+}
